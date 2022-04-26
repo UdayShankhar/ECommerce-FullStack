@@ -35,6 +35,10 @@ app.search((err, req, res, next) => {
 
 const PORT = process.env.PORT || 9000
 
+app.get("/",(req,res)=>{
+    res.send("Welcome")
+})
+
 app.listen(PORT, () => {
     console.log(`Server is running on ${PORT}`);
 })
